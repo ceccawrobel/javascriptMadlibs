@@ -18,4 +18,16 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+  $("form#names").submit(function(event) {
+    var userNameInput = $("input#userName").val();
+    var otherNameInput = $("input#friendName").val();
+
+    $("#yourName").text(userNameInput);
+    $("#theirName").text(otherNameInput);
+
+    // $("#letter").show();
+    //
+    event.preventDefault();
+  });
 });
